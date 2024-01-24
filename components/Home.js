@@ -7,6 +7,7 @@ function Home() {
         <div className={styles.div_container_left}>
           <h1 className={styles.title}>
               Welcome to <a href="https://nextjs.org">Next.jssss!</a>
+              Welcome to <a href="https://nextjs.org">Next.jssss!</a>
           </h1>
         </div>
         <div className={styles.div_container_right}>
