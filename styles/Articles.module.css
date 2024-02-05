@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #151F2B;
+}
+
+.containeur_left {
+    flex: 0 0 25%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 1px solid white;
+}
+.button_blue:hover {
+    background-color: white;
+    color: #151F2B;
+    border: 1px solid #3E9BEF;
+    justify-content: flex-start; 
+  }
+  .profil{
+    display: flex;
+
+  }
+  .info_profil{
+    margin-left: 10px;
+  }
+  .p_info_profil{
+    color: #6F7987;
+    font-size: 16px;
+    
+}
+/* Components center */
+.containeur_center {
+    flex: 0 0 50%;
+
+}
+
+
+
+
+
+
+
+.containeur_right {
+    flex: 0 0 25%;
+  
+    border-left: 1px solid white;
+}
+
+.button_blue{
+    background-color: #151F2B;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 15px;
+   
+    width: 100px;
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 2s ease; 
+  }
+  .button_blue:hover {
+    background-color: white;
+    color: #151F2B;
+    border: 1px solid #3E9BEF;
+    justify-content: flex-start; 
+  }

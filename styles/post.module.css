@@ -1,0 +1,40 @@
+.containeur_center_bottom{
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containeur_profil{
+    display: flex;
+    flex-direction: row;
+}
+.span_info_profil_post{
+    font-weight: 600;
+    color: white;
+}
+
+.p_info_profil{
+    color: #6F7987;
+    font-size: 16px;
+}
+
+.like_post{
+    display: flex;
+    height: 25px;
+    align-items: center;
+}
+.like_post > :first-child {
+    margin-right: 5px;
+}
+.info_profil_post{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.img_profil_post{
+    display: flex;
+    align-items: center;
+
+}

@@ -1,23 +1,19 @@
-import styles from '../styles/Home.module.css';
+import React from 'react';
+import  { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import Connection from './Connection_home_page';
+import { useSelector } from 'react-redux';
+import Articles from './Articles'
 
 function Home() {
+  const dispatch = useDispatch();
+  
+  const user = useSelector((state) => state.user);
+
   return (
-    <div>
-      <main className={styles.main}>
-        <div className={styles.div_container_left}>
-          <h1 className={styles.title}>
-              Welcome to <a href="https://nextjs.org">Next.jssss!</a>
-              Welcome to <a href="https://nextjs.org">Next.jssss!</a>
-          </h1>
-        </div>
-        <div className={styles.div_container_right}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.jssss!</a>
-          </h1>
-        </div>
-        
-      </main>
-    </div>
+    <>
+        {user && user.value.length > 0 ? <Articles /> :<Connection />} 
+    </>
   );
 }
 
